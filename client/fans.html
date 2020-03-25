@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/DatabaseWorker.js"></script>
+    <script src="./scripts/popupWindow.js"></script>
+    <script src="./scripts/addSmth.js?version=1.0"></script>
+    <script src="./scripts/consts.js"></script>
+    <script src="./scripts/loadAppealsContent.js"></script>
+
+    <title>Na'Vi</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="burger" id="burger">
+          <div class="burger-stick"></div>
+        </div>
+        <ul class="navigation-items" id="nav-items">
+          <li class="nav-btn">
+            <a href="./index.html" class="nav-href">
+              <h3 class="nav-btn-text">Main</h3>
+            </a>
+          </li>
+          <li class="nav-btn matches-expander">
+            <a href="#" class="nav-href">
+              <h3 class="nav-btn-text">Matches</h3>
+            </a>
+            <ul class="expand-list">
+              <li class="nav-btn">
+                <a href="#" class="nav-href">
+                  <h3 class="nav-btn-text">
+                    Calendar of matches
+                  </h3>
+                </a>
+              </li>
+              <li class="nav-btn">
+                <a href="#" class="nav-href">
+                  <h3 class="nav-btn-text">Next game</h3>
+                </a>
+              </li>
+              <li class="nav-btn">
+                <a href="#" class="nav-href">
+                  <h3 class="nav-btn-text">Raitings</h3>
+                </a>
+              </li>
+              <li class="nav-btn">
+                <a href="#" class="nav-href">
+                  <h3 class="nav-btn-text">Matches</h3>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-btn">
+            <a href="./news.html" class="nav-href">
+              <h3 class="nav-btn-text">News</h3>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a href="./fans.html" class="nav-href">
+              <h3 class="nav-btn-text">Fans</h3>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a href="#" class="nav-href">
+              <h3 class="nav-btn-text">Contacts</h3>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a href="./admin.html" class="nav-href">
+              <h3 class="nav-btn-text">Admin</h3>
+            </a>
+          </li>
+        </ul>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./content/img/NAVI_logo.png"
+              alt=""
+              class="logo-img"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="background-rect"></div>
+      <section class="comments-section">
+        <div
+          class="container comments-container"
+          id="user-comments"
+        >
+          <h2
+            class="comments-container-header section-header"
+          >
+            Appeal of fans
+          </h2>
+          <div
+            class="user-comment-holder"
+            id="userCommentHolder"
+          >
+            <div class="single-comment">
+              <p class="user-comment">
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Hic optio vel reiciendis
+                ipsa? Facere exercitationem cupiditate sit.
+                Possimus enim ratione inventore voluptatem?
+                Fugit quisquam iste ea voluptas magni
+                officia itaque.
+              </p>
+              <div class="date-name">
+                <h2 class="date">some date</h2>
+                <h2 class="username">user.name</h2>
+              </div>
+            </div>
+            <div class="single-comment">
+              <p class="user-comment">
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Hic optio vel reiciendis
+                ipsa? Facere exercitationem cupiditate sit.
+                Possimus enim ratione inventore voluptatem?
+                Fugit quisquam iste ea voluptas magni
+                officia itaque.
+              </p>
+              <div class="date-name">
+                <h2 class="date">some date</h2>
+                <h2 class="username">user.name</h2>
+              </div>
+            </div>
+            <div class="single-comment">
+              <p class="user-comment">
+                Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Hic optio vel reiciendis
+                ipsa? Facere exercitationem cupiditate sit.
+                Possimus enim ratione inventore voluptatem?
+                Fugit quisquam iste ea voluptas magni
+                officia itaque.
+              </p>
+              <div class="date-name">
+                <h2 class="date">some date</h2>
+                <h2 class="username">user.name</h2>
+              </div>
+            </div>
+          </div>
+
+          <form
+            method="post"
+            class="comment-form"
+            id="addFanAppealForm"
+          >
+            <div class="side-fields">
+              <textarea
+                name=""
+                id="appealText"
+                class="text-area"
+                required
+                autocomplete="off"
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Send"
+              class="submit-btn button"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <p class="footer-text">
+            Natus Vincere 2009-2020 ©
+          </p>
+        </div>
+        <div class="footer-item footer-img">
+          <img
+            src="https://navi.gg/design/navi_en/img/bg/footer-logo.png"
+            alt=""
+            class="glhf-img"
+          />
+        </div>
+        <div class="footer-item">
+          <p class="footer-text">
+            All trademarks and copyrights belong to their
+            respective owners
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
